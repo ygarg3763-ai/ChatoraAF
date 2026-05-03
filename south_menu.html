@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - South Circle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link rel="stylesheet" href="south_menu.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="restruant.html">← Back to Restaurants</a>
+</div>
+
+<div class="hero">
+  <h2>🌴 South Circle</h2>
+  <p>⭐ 4.2 &nbsp;|&nbsp; ⏱ 20–30 min &nbsp;|&nbsp; 🛵 Free Delivery</p>
+  <p style="margin-top:8px; font-size:12px;">Served with sambar & coconut chutney</p>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showSection('dosa', this)">🫔 Dosa</button>
+  <button class="tab" onclick="showSection('idli', this)">🍥 Idli</button>
+  <button class="tab" onclick="showSection('street', this)">🍞 Street Bites</button>
+</div>
+
+<div class="menu">
+
+  <!-- DOSA -->
+  <div class="section active" id="dosa">
+    <h3>🫔 Dosa</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🫔</div>
+        <h4>Masala Dosa</h4>
+        <p>Crispy dosa with spiced potato filling</p>
+        <p class="price">₹99</p>
+        <button onclick="order('Masala Dosa')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🫔</div>
+        <h4>Plain Dosa</h4>
+        <p>Thin crispy dosa with sambar & chutney</p>
+        <p class="price">₹79</p>
+        <button onclick="order('Plain Dosa')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🫔</div>
+        <h4>Paneer Dosa</h4>
+        <p>Dosa stuffed with spiced paneer</p>
+        <p class="price">₹129</p>
+        <button onclick="order('Paneer Dosa')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- IDLI -->
+  <div class="section" id="idli">
+    <h3>🍥 Idli</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍥</div>
+        <h4>Plain Idli</h4>
+        <p>Soft steamed idli with sambar & chutney</p>
+        <p class="price">₹69</p>
+        <button onclick="order('Plain Idli')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍥</div>
+        <h4>Masala Idli</h4>
+        <p>Idli tossed in spicy masala tadka</p>
+        <p class="price">₹89</p>
+        <button onclick="order('Masala Idli')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- STREET BITES -->
+  <div class="section" id="street">
+    <h3>🍞 Street Bites</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍛</div>
+        <h4>Pav Bhaji</h4>
+        <p>Spicy veggie bhaji with buttered pav</p>
+        <p class="price">₹119</p>
+        <button onclick="order('Pav Bhaji')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍞</div>
+        <h4>Classic Vada Pav</h4>
+        <p>Crispy vada in pav with dry garlic chutney</p>
+        <p class="price">₹49</p>
+        <button onclick="order('Classic Vada Pav')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🌶️</div>
+        <h4>Schezwan Vada Pav</h4>
+        <p>Vada pav with spicy schezwan sauce</p>
+        <p class="price">₹65</p>
+        <button onclick="order('Schezwan Vada Pav')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="south_menu.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>

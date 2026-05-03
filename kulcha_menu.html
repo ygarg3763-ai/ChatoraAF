@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - House of Kulcha</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link rel="stylesheet" href="kulcha_menu.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="restruant.html">← Back to Restaurants</a>
+</div>
+
+<div class="hero">
+  <h2>🫓 House of Kulcha</h2>
+  <p>⭐ 4.6 &nbsp;|&nbsp; ⏱ 15–25 min &nbsp;|&nbsp; 🛵 Free Delivery</p>
+  <p style="margin-top:8px; font-size:12px;">Authentic Amritsari Kulche — Served with chole, chutney & butter</p>
+</div>
+
+<div class="menu">
+  <h3>🫓 Amritsari Kulche</h3>
+  <div class="cards">
+
+    <div class="card">
+      <div class="card-img">🫓</div>
+      <h4>Aloo Kulcha</h4>
+      <p>Classic spiced potato stuffing</p>
+      <p class="price">₹70</p>
+      <button onclick="order('Aloo Kulcha')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🫓</div>
+      <h4>Paneer Kulcha</h4>
+      <p>Fresh paneer with spices & herbs</p>
+      <p class="price">₹90</p>
+      <button onclick="order('Paneer Kulcha')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🫓</div>
+      <h4>Onion Kulcha</h4>
+      <p>Crispy onion & green chilli mix</p>
+      <p class="price">₹70</p>
+      <button onclick="order('Onion Kulcha')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🫓</div>
+      <h4>Mix Kulcha</h4>
+      <p>Aloo + paneer + onion combo</p>
+      <p class="price">₹100</p>
+      <button onclick="order('Mix Kulcha')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🫓</div>
+      <h4>Gobi Kulcha</h4>
+      <p>Spiced cauliflower stuffing</p>
+      <p class="price">₹75</p>
+      <button onclick="order('Gobi Kulcha')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🫓</div>
+      <h4>Plain Kulcha</h4>
+      <p>Simple buttery kulcha with chole</p>
+      <p class="price">₹55</p>
+      <button onclick="order('Plain Kulcha')">Add to Cart</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="kulcha_menu.js"></script>
+
+<script src="cart.js"></script>
+</body>
+</html>

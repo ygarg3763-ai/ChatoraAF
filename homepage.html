@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ChatoraAF - Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+<link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+ 
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+ 
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span> Now delivering across Chitkara Campus</div>
+    <h1>Your Campus,<br>Your <span>Cravings</span> 😋</h1>
+    <p>Order fresh food, subscribe to tiffin plans, track your diet & split bills with friends — all in one place.</p>
+    <div class="hero-actions">
+      <a href="restruant.html" class="btn-primary"><i class="fas fa-utensils"></i> Order Now</a>
+      <a href="#features" class="btn-secondary"><i class="fas fa-grip"></i> Explore Features</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-num">20+</div><div class="stat-label">Restaurants</div></div>
+      <div class="stat-item"><div class="stat-num">₹80</div><div class="stat-label">Meals from</div></div>
+      <div class="stat-item"><div class="stat-num">30 min</div><div class="stat-label">Avg Delivery</div></div>
+      <div class="stat-item"><div class="stat-num">6</div><div class="stat-label">Diet Plans</div></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FEATURES OVERVIEW -->
+<section class="section" id="features" style="background:var(--dark)">
+  <div class="sec-header reveal">
+    <div class="sec-tag">Everything You Need</div>
+    <h2>All Features, One App</h2>
+    <p>ChatoraAF is built for campus life — scroll to explore every feature</p>
+  </div>
+  <div class="features-grid">
+    <div class="feat-card wide tall reveal" onclick="location.href='restruant.html'">
+      <div class="feat-bg">🍕</div>
+      <span class="feat-emoji">🍽️</span>
+      <h3>Restaurant Ordering</h3>
+      <p>Browse top-rated restaurants near campus, explore menus and get food delivered hot to your hostel or classroom.</p>
+      <a href="restruant.html" class="feat-link">Explore Restaurants <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="feat-card reveal" onclick="location.href='tiffin.html'">
+      <div class="feat-pill">From ₹80/day</div>
+      <span class="feat-emoji">🍱</span>
+      <h3>Tiffin System</h3>
+      <p>Subscribe to daily homemade meal plans — Basic, Standard or Premium.</p>
+      <a href="tiffin.html" class="feat-link">View Plans <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="feat-card reveal" onclick="location.href='dietplan.html'">
+      <span class="feat-emoji">🥗</span>
+      <h3>Diet Plans</h3>
+      <p>Pick a goal — Weight Loss, Muscle Gain, Diabetic, Heart Healthy and more.</p>
+      <a href="dietplan.html" class="feat-link">Choose Plan <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="feat-card reveal" onclick="location.href='budget.html'">
+      <div class="feat-pill">Smart Filter</div>
+      <span class="feat-emoji">💸</span>
+      <h3>Budget Finder</h3>
+      <p>Enter your budget and instantly discover restaurants that fit your wallet.</p>
+      <a href="budget.html" class="feat-link">Find Deals <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="feat-card reveal" onclick="location.href='grouporder.html'">
+      <span class="feat-emoji">👥</span>
+      <h3>Group Orders</h3>
+      <p>Create a room, invite friends, everyone picks their food and the bill splits equally.</p>
+      <a href="grouporder.html" class="feat-link">Start a Room <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+ 
+<!-- TOP RESTAURANTS -->
+<section class="section" id="restaurants" style="background:#0a0a0a;padding-top:40px;">
+  <div class="sec-header reveal">
+    <div class="sec-tag">Near You</div>
+    <h2>Top Restaurants</h2>
+    <p>Highest rated spots on campus right now</p>
+  </div>
+  <div class="rest-grid">
+    <div class="rest-card reveal" onclick="location.href='kulcha_menu.html'">
+      <div class="rest-img">🥙<div class="rest-img-overlay"></div><div class="rest-time">⏱ 30 min</div></div>
+      <div class="rest-body"><h3>House of Kulcha</h3><div class="rest-meta"><span class="rest-rating">⭐ 4.5</span><span>•</span><span>North Indian</span></div><span class="rest-tag">Budget Friendly</span></div>
+    </div>
+    <div class="rest-card reveal" onclick="location.href='healthy_menu.html'">
+      <div class="rest-img" style="background:#0a1a0a">🥗<div class="rest-img-overlay"></div><div class="rest-time">⏱ 25 min</div></div>
+      <div class="rest-body"><h3>Healthy Wave</h3><div class="rest-meta"><span class="rest-rating">⭐ 4.2</span><span>•</span><span>Healthy</span></div><span class="rest-tag">Diet Approved</span></div>
+    </div>
+    <div class="rest-card reveal" onclick="location.href='lapinoz_menu.html'">
+      <div class="rest-img" style="background:#1a0a0a">🍕<div class="rest-img-overlay"></div><div class="rest-time">⏱ 35 min</div></div>
+      <div class="rest-body"><h3>La Pino'z</h3><div class="rest-meta"><span class="rest-rating">⭐ 4.7</span><span>•</span><span>Pizza</span></div><span class="rest-tag">Top Rated</span></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- TIFFIN SECTION -->
+<section class="section" id="tiffin">
+  <div class="tiffin-wrapper">
+    <div class="tiffin-info reveal">
+      <div class="sec-tag">Daily Subscription</div>
+      <h2>Fresh <span>Tiffin</span><br>Every Day</h2>
+      <p>Tired of canteen food? Subscribe to daily homemade meal plans that are fresh, hygienic and affordable.</p>
+      <div class="tiffin-perks">
+        <div class="perk"><div class="perk-icon">🥗</div> Fresh & Hygienic ingredients daily</div>
+        <div class="perk"><div class="perk-icon">🚚</div> On-time delivery guaranteed</div>
+        <div class="perk"><div class="perk-icon">👩‍🍳</div> Homemade taste, zero compromise</div>
+        <div class="perk"><div class="perk-icon">💰</div> Cancel or pause anytime</div>
+      </div>
+      <a href="tiffin.html" class="btn-primary" style="display:inline-flex">View All Plans <i class="fas fa-arrow-right" style="margin-left:8px"></i></a>
+    </div>
+    <div class="tiffin-plans reveal">
+      <div class="tiffin-plan" onclick="location.href='tiffin.html'">
+        <div class="plan-left"><div class="plan-emoji">🍛</div><div><div class="plan-name">Basic Tiffin</div><div class="plan-desc">2 Roti • Dal • Sabzi • Rice</div></div></div>
+        <div><div class="plan-price">₹80</div><div class="plan-unit">per day</div></div>
+      </div>
+      <div class="tiffin-plan featured" onclick="location.href='tiffin.html'">
+        <div class="plan-left"><div class="plan-emoji">🍱</div><div><div class="plan-name">Standard Tiffin</div><div class="plan-desc">4 Roti • 2 Sabzi • Dal • Rice • Salad</div></div></div>
+        <div><div class="plan-price">₹120</div><div class="plan-unit">per day</div></div>
+      </div>
+      <div class="tiffin-plan" onclick="location.href='tiffin.html'">
+        <div class="plan-left"><div class="plan-emoji">👑</div><div><div class="plan-name">Premium Tiffin</div><div class="plan-desc">Full Meal • Special Dish • Sweet</div></div></div>
+        <div><div class="plan-price">₹180</div><div class="plan-unit">per day</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- DIET PLANS -->
+<section class="section" id="diet" style="background:var(--dark)">
+  <div class="sec-header reveal">
+    <div class="sec-tag">Eat Smart</div>
+    <h2>Diet Plan Selector</h2>
+    <p>Pick your goal and we'll show you what to eat today</p>
+  </div>
+  <div class="diet-grid">
+    <div class="diet-card" onclick="showDiet('🏋️ Weight Gain',['Banana Shake','Rice + Paneer','Dry Fruits','Chicken + Roti'],this)">
+      <span class="diet-emoji">🏋️</span><h3>Weight Gain</h3><p>High calorie, protein-rich meals</p>
+    </div>
+    <div class="diet-card" onclick="showDiet('⚖️ Weight Loss',['Oats & Fruit Bowl','Brown Rice + Dal','Mixed Fruit Plate','Soup + Salad'],this)">
+      <span class="diet-emoji">⚖️</span><h3>Weight Loss</h3><p>Low calorie, high fibre meals</p>
+    </div>
+    <div class="diet-card" onclick="showDiet('💪 Muscle Build',['Eggs + Milk','Chicken Breast + Rice','Protein Shake','Paneer Bhurji'],this)">
+      <span class="diet-emoji">💪</span><h3>Muscle Build</h3><p>High protein, lean bulk plan</p>
+    </div>
+    <div class="diet-card" onclick="showDiet('🧘 Healthy Living',['Seasonal Fruits + Nuts','Balanced Thali','Curd + Salad','Light Khichdi'],this)">
+      <span class="diet-emoji">🧘</span><h3>Healthy Living</h3><p>Balanced nutrition for daily life</p>
+    </div>
+    <div class="diet-card" onclick="showDiet('🩺 Diabetic',['Multigrain Toast','Brown Rice','Roasted Nuts','Grilled Vegetables'],this)">
+      <span class="diet-emoji">🩺</span><h3>Diabetic</h3><p>Low GI, sugar-controlled meals</p>
+    </div>
+    <div class="diet-card" onclick="showDiet('🫀 Heart Healthy',['Oats Porridge','Steamed Veggies','Almonds + Walnuts','Clear Veg Soup'],this)">
+      <span class="diet-emoji">🫀</span><h3>Heart Healthy</h3><p>Low fat, heart-friendly choices</p>
+    </div>
+  </div>
+  <div class="diet-result" id="dietResult">
+    <h3 id="dietTitle"></h3>
+    <div class="diet-meals" id="dietMeals"></div>
+    <div class="diet-cta">
+      <p>Want meals from this plan delivered?</p>
+      <a href="dietplan.html" class="btn-primary" style="font-size:14px;padding:10px 24px">Order Diet Meals <i class="fas fa-arrow-right" style="margin-left:8px"></i></a>
+    </div>
+  </div>
+</section>
+ 
+<!-- BUDGET FINDER -->
+<section class="section" id="budget">
+  <div class="sec-header reveal">
+    <div class="sec-tag">Budget Smart</div>
+    <h2>Find Food Within Budget 💸</h2>
+    <p>Tell us your budget — we'll find exactly what fits</p>
+  </div>
+  <div class="budget-wrapper reveal">
+    <div class="budget-input-row">
+      <div class="budget-input">
+        <span>₹</span>
+        <input type="number" id="budgetInput" placeholder="Enter amount" oninput="filterBudget()">
+      </div>
+      <button class="btn-primary" onclick="filterBudget()" style="padding:14px 28px">Find Restaurants</button>
+    </div>
+    <div class="budget-presets">
+      <button class="preset-btn" onclick="setBudget(50,this)">Under ₹50</button>
+      <button class="preset-btn" onclick="setBudget(100,this)">Under ₹100</button>
+      <button class="preset-btn" onclick="setBudget(150,this)">Under ₹150</button>
+      <button class="preset-btn" onclick="setBudget(250,this)">Under ₹250</button>
+    </div>
+    <div class="budget-results" id="budgetResults"></div>
+  </div>
+</section>
+ 
+<!-- GROUP ORDER -->
+<section class="section" id="group" style="background:var(--dark)">
+  <div class="sec-header reveal">
+    <div class="sec-tag">Order Together</div>
+    <h2>Group Orders 👥</h2>
+    <p>Order with your squad, split the bill — no awkward math required</p>
+  </div>
+  <div class="group-wrapper">
+    <div class="group-how reveal">
+      <div><h3>How It Works</h3><p style="color:var(--muted);font-size:14px;margin-top:6px">Three easy steps to order as a group</p></div>
+      <div class="group-step"><div class="gstep-num">1</div><div class="gstep-text"><h4>Create or Join a Room</h4><p>Start a group session and share the Room ID with friends</p></div></div>
+      <div class="group-step"><div class="gstep-num">2</div><div class="gstep-text"><h4>Everyone Adds Their Items</h4><p>Each person browses and adds what they want independently</p></div></div>
+      <div class="group-step"><div class="gstep-num">3</div><div class="gstep-text"><h4>Place Order & Split Bill</h4><p>One click places the combined order and divides the total equally</p></div></div>
+    </div>
+    <div class="group-cards">
+      <div class="group-action-card reveal">
+        <h4>🏠 Create a Room</h4>
+        <p>Start a group order & share the Room ID with friends</p>
+        <div class="group-inputs">
+          <input class="group-input" type="text" placeholder="Your Name">
+          <input class="group-input" type="text" placeholder="Select Restaurant">
+        </div>
+        <button class="btn-full primary" onclick="location.href='grouporder.html'">+ Create Room</button>
+      </div>
+      <div class="group-action-card reveal">
+        <h4>🔗 Join a Room</h4>
+        <p>Enter the Room ID shared by your friend</p>
+        <div class="group-inputs">
+          <input class="group-input" type="text" placeholder="Your Name">
+          <input class="group-input" type="text" placeholder="Room ID (e.g. CHAT-4821)">
+        </div>
+        <button class="btn-full outline" onclick="location.href='grouporder.html'">Join Room →</button>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- OFFERS -->
+<div class="offers-banner reveal">
+  <div class="offer-text">
+    <h2>🔥 Flat 50% OFF on First Order!</h2>
+    <p>Limited time offer. Click to copy code and apply at checkout.</p>
+  </div>
+  <div class="offer-code" onclick="copyCode(this)">CHATORA50</div>
+</div>
+ 
+<!-- COMING SOON -->
+<section class="section" id="coming-soon" style="background:#0a0a0a;padding-bottom:60px">
+  <div class="sec-header reveal">
+    <div class="sec-tag">What's Next</div>
+    <h2>Coming Soon 🚀</h2>
+    <p>Features we're building next — stay tuned!</p>
+  </div>
+  <div class="coming-grid">
+    <div class="coming-card reveal"><div class="soon-badge">Soon</div><span>📍</span><h3>Live Order Tracking</h3><p>Watch your order move from kitchen to your door in real-time</p></div>
+    <div class="coming-card reveal"><div class="soon-badge">Soon</div><span>⭐</span><h3>Reviews & Ratings</h3><p>Rate dishes and restaurants to help your peers choose better</p></div>
+    <div class="coming-card reveal"><div class="soon-badge">Soon</div><span>🏆</span><h3>Loyalty Rewards</h3><p>Earn ChatoraPoints on every order and redeem for discounts</p></div>
+    <div class="coming-card reveal"><div class="soon-badge">Soon</div><span>🌙</span><h3>Late Night Delivery</h3><p>Craving something after 10 PM? Late night options covered</p></div>
+    <div class="coming-card reveal"><div class="soon-badge">Soon</div><span>📅</span><h3>Mess Menu Sync</h3><p>View today's hostel mess menu and order extras from campus</p></div>
+    <div class="coming-card reveal"><div class="soon-badge">Soon</div><span>🎓</span><h3>Student Discounts</h3><p>Verify your student ID for exclusive campus-only pricing</p></div>
+    <div class="coming-card reveal"><div class="soon-badge">Soon</div><span>🔔</span><h3>Smart Notifications</h3><p>Get alerted when your favourite restaurant posts today's special</p></div>
+    <div class="coming-card reveal"><div class="soon-badge">Soon</div><span>🤖</span><h3>AI Food Suggestions</h3><p>Personalised meal recommendations based on your order history</p></div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="nav-logo">ChatoraAF 🍔</div>
+      <p>Campus food delivery reimagined. Built for students, by students at Chitkara University, Patiala.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Features</h4>
+      <a href="restruant.html">Restaurants</a>
+      <a href="tiffin.html">Tiffin System</a>
+      <a href="dietplan.html">Diet Plans</a>
+      <a href="budget.html">Budget Finder</a>
+      <a href="grouporder.html">Group Orders</a>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#">Profile</a>
+      <a href="#">My Orders</a>
+      <a href="#">Cart</a>
+      <a href="#">Offers</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Contact Us</a>
+      <a href="#">FAQs</a>
+      <a href="#">Feedback</a>
+      <a href="#">About Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 ChatoraAF — Made with ❤️ at Chitkara University, Patiala</p>
+    <p>🍕 🍱 🥗 💸 👥</p>
+  </div>
+</footer>
+<script src="cart.js"></script>
+<!-- CHATBOT BUBBLE BUTTON -->
+<div id="chat-bubble" onclick="toggleChat()" title="Ask ChatoraBot">
+  💬
+</div>
+
+<!-- CHATBOT WINDOW -->
+<!-- Floating bubble button -->
+<div id="chat-bubble" onclick="toggleChat()" title="Chat with ChatoraBot">💬</div>
+ 
+<!-- Chat window -->
+<div id="chat-window">
+ 
+  <!-- Header -->
+  <div id="chat-header">
+    <div style="display:flex;align-items:center;gap:10px">
+      <div style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;font-size:18px">🤖</div>
+      <div>
+        <div style="font-weight:700;font-size:15px">ChatoraBot</div>
+        <div style="font-size:11px;opacity:0.8">🟢 Online — Food & Delivery Help</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;align-items:center">
+      <span onclick="clearChat()" title="Clear chat" style="cursor:pointer;opacity:0.7;font-size:13px">🗑️</span>
+      <span onclick="toggleChat()" style="cursor:pointer;font-size:18px;opacity:0.8">✕</span>
+    </div>
+  </div>
+ 
+  <!-- Messages -->
+  <div id="chat-messages">
+    <div class="chat-msg bot">
+      Hi! I'm ChatoraBot 🍔 Ask me anything about our food, delivery, tiffin plans, diet, or restaurants!
+    </div>
+ 
+    <!-- Quick suggestion chips -->
+    <div id="chat-chips">
+      <button class="chip" onclick="quickAsk('What tiffin plans do you have?')">🍱 Tiffin Plans</button>
+      <button class="chip" onclick="quickAsk('What are the best restaurants?')">🍽️ Restaurants</button>
+      <button class="chip" onclick="quickAsk('Tell me about diet plans')">🥗 Diet Plans</button>
+      <button class="chip" onclick="quickAsk('Any offers or discounts?')">🔥 Offers</button>
+    </div>
+  </div>
+ 
+  <!-- Typing indicator -->
+  <div id="typing-indicator" style="display:none;padding:8px 16px;align-items:center;gap:8px;color:#888;font-size:13px">
+    <div style="display:flex;gap:4px">
+      <span style="animation:blink 1.2s infinite 0s">●</span>
+      <span style="animation:blink 1.2s infinite .2s">●</span>
+      <span style="animation:blink 1.2s infinite .4s">●</span>
+    </div>
+    ChatoraBot is typing...
+  </div>
+ 
+  <!-- Input footer -->
+  <div id="chat-footer">
+    <input id="chat-input" type="text" placeholder="Ask about food, delivery..." autocomplete="off" />
+    <button id="chat-send-btn" onclick="sendMessage()">➤</button>
+  </div>
+ 
+</div>
+<script src="chatbot.js"></script>
+</body>
+<script src="homepage.js"></script>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - Group Order</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link rel="stylesheet" href="grouporder.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="homepage.html">← Back to Home</a>
+</div>
+
+<div class="hero">
+  <h2>👥 Group Order</h2>
+  <p>Order together with friends & split the bill equally!</p>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="how">
+  <div class="step"><span class="num">1</span> Create or Join a Room</div>
+  <div class="arrow">›</div>
+  <div class="step"><span class="num">2</span> Everyone adds their items</div>
+  <div class="arrow">›</div>
+  <div class="step"><span class="num">3</span> Place order & split bill</div>
+</div>
+
+<div class="page" id="lobby-view">
+
+  <!-- CREATE ROOM -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">🏠</div>
+      <div>
+        <h3>Create a Room</h3>
+        <p>Start a group order & share the Room ID with friends</p>
+      </div>
+    </div>
+    <div class="input-row">
+      <input class="input-box" id="create-name" type="text" placeholder="Your Name">
+    </div>
+    <button class="btn-primary" id="btn-create-room" onclick="createRoom()">+ Create Room</button>
+  </div>
+
+  <div class="or-divider">── or ──</div>
+
+  <!-- JOIN ROOM -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-icon">🔗</div>
+      <div>
+        <h3>Join a Room</h3>
+        <p>Enter the Room ID shared by your friend</p>
+      </div>
+    </div>
+    <div class="input-row">
+      <input class="input-box" id="join-name" type="text" placeholder="Your Name">
+      <input class="input-box" id="join-room-id" type="text" placeholder="Enter Room ID (e.g. CHAT-4821)">
+    </div>
+    <button class="btn-outline" id="btn-join-room" onclick="joinRoom()">Join Room →</button>
+  </div>
+
+</div>
+
+<!-- ROOM VIEW (Hidden by default) -->
+<div class="page" id="room-view" style="display: none;">
+  
+  <div class="room-header">
+    <div class="room-info">
+      <h2 id="room-title">Room ID: <span class="highlight">...</span></h2>
+      <p id="room-subtitle">Ordering from: <span>Global Menu</span></p>
+    </div>
+    <button class="btn-outline leave-btn" onclick="leaveRoom()">Leave Room</button>
+  </div>
+
+  <div class="room-grid">
+    
+    <!-- LEFT COLUMN -->
+    <div class="room-left">
+      <!-- MEMBERS -->
+      <div class="card members-card">
+        <h3>👥 Room Members</h3>
+        <ul id="members-list" class="members-list">
+          <!-- Populated by JS -->
+        </ul>
+      </div>
+
+      <!-- MOCK MENU -->
+      <div class="card menu-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <h3 style="margin: 0;">🍕 Add Food to Group Cart</h3>
+          <select id="restaurant-filter" class="input-box" style="width: auto; padding: 6px 12px; font-size: 13px;" onchange="renderMenu()">
+            <option value="All">All Restaurants</option>
+            <option value="Belgian Waffle">Belgian Waffle</option>
+            <option value="BEV Cafe">BEV Cafe</option>
+            <option value="Blue Tokai">Blue Tokai</option>
+            <option value="Chaap n Grill">Chaap n Grill</option>
+            <option value="Chai Nagri">Chai Nagri</option>
+            <option value="Chai Vyanjan">Chai Vyanjan</option>
+            <option value="First Coffee">First Coffee</option>
+            <option value="Golzza">Golzza</option>
+            <option value="The Healthy Wave">The Healthy Wave</option>
+            <option value="House of Kulcha">House of Kulcha</option>
+            <option value="La Pino'z Pizza">La Pino'z Pizza</option>
+            <option value="Momos Hunter">Momos Hunter</option>
+            <option value="Parantha Corner">Parantha Corner</option>
+            <option value="Panjaab 13">Panjaab 13</option>
+            <option value="Sher E Punjab">Sher E Punjab</option>
+            <option value="Sip-Stop">Sip-Stop</option>
+            <option value="South Circle">South Circle</option>
+            <option value="Venky's">Venky's</option>
+          </select>
+        </div>
+        <div class="mock-menu" id="dynamic-menu" style="max-height: 400px; overflow-y: auto; padding-right: 8px;">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN (GROUP CART & BILL SPLIT) -->
+    <div class="room-right">
+      <div class="card cart-card">
+        <h3>🛒 Group Cart</h3>
+        <div id="group-cart-items" class="group-cart-items">
+          <!-- Populated by JS -->
+          <div class="empty-cart">Cart is empty. Add some food!</div>
+        </div>
+
+        <div class="cart-summary">
+          <div class="summary-row">
+            <span>Total Bill:</span>
+            <span id="group-total" class="total-price">₹0</span>
+          </div>
+          <div class="summary-row split-row">
+            <span>Total Members:</span>
+            <span id="group-members-count">1</span>
+          </div>
+          <div class="summary-row split-result">
+            <span>Your Share:</span>
+            <span id="group-split-amount" class="highlight-price">₹0</span>
+          </div>
+        </div>
+
+        <button class="btn-primary full-btn" onclick="placeGroupOrder()">Place Group Order</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="cart.js"></script>
+<script src="database.js"></script>
+<script src="grouporder.js"></script>
+</body>
+</html>

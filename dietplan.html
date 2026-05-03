@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Diet Plan Selector</title>
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="dietplan.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>🍽️ Choose Your Perfect Diet Plan</header>
+
+<div class="container">
+
+<!-- BMI CALCULATOR SECTION -->
+<div class="bmi-calculator">
+  <h3>Calculate Your BMI</h3>
+  <p>Enter your details below and we'll automatically recommend the best diet plan for you.</p>
+  <div class="bmi-inputs">
+    <div class="input-group">
+      <label>Height (cm)</label>
+      <input type="number" id="bmi-height" placeholder="e.g. 175">
+    </div>
+    <div class="input-group">
+      <label>Weight (kg)</label>
+      <input type="number" id="bmi-weight" placeholder="e.g. 70">
+    </div>
+  </div>
+  <button class="bmi-btn" onclick="calculateBMI()">Calculate & Get Plan</button>
+  <div id="bmi-result" class="bmi-result" style="display:none;"></div>
+</div>
+
+<!-- RADIO BUTTONS -->
+<input type="radio" name="diet" id="g1">
+<input type="radio" name="diet" id="g2">
+<input type="radio" name="diet" id="g3">
+<input type="radio" name="diet" id="g4">
+<input type="radio" name="diet" id="g5">
+<input type="radio" name="diet" id="g6">
+
+<!-- CARDS -->
+<div class="goals">
+
+<label for="g1" class="card">
+  <div class="icon"><i class="fas fa-dumbbell"></i></div>
+  🏋️ Weight Gain
+</label>
+
+<label for="g2" class="card">
+  <div class="icon"><i class="fas fa-weight-scale"></i></div>
+  ⚖️ Weight Loss
+</label>
+
+<label for="g3" class="card">
+  <div class="icon"><i class="fas fa-fire"></i></div>
+  💪 Muscle
+</label>
+
+<label for="g4" class="card">
+  <div class="icon"><i class="fas fa-leaf"></i></div>
+  🧘 Healthy
+</label>
+
+<label for="g5" class="card">
+  <div class="icon"><i class="fas fa-notes-medical"></i></div>
+  🩺 Diabetic
+</label>
+
+<label for="g6" class="card">
+  <div class="icon"><i class="fas fa-heart"></i></div>
+  🫀 Heart
+</label>
+
+</div>
+
+<!-- DIET PLANS -->
+<div class="plans">
+
+<div id="plan1" class="diet-plan">
+<h2>🏋️ Weight Gain</h2>
+<div class="meal-grid">
+  <div class="meal-time"><h4>🌅 Morning</h4><p>Banana Shake with Peanut Butter, 4 Boiled Eggs or Aloo Paratha with Curd</p></div>
+  <div class="meal-time"><h4>☀️ Afternoon</h4><p>Rice, Paneer Curry, Thick Dal, 2-3 Rotis, Salad</p></div>
+  <div class="meal-time"><h4>🌇 Evening</h4><p>Handful of Mixed Nuts & Dates, Protein Bar or Besan Chilla</p></div>
+  <div class="meal-time"><h4>🌙 Dinner</h4><p>Chicken/Soya Chunks Curry, 3 Rotis, Mixed Veg</p></div>
+</div>
+<div class="dos-donts">
+  <div class="dos"><h4>✅ Do's</h4><ul><li>Eat frequently (every 3 hours)</li><li>Focus on calorie-dense, protein-rich whole foods</li><li>Drink 3L of water daily</li></ul></div>
+  <div class="donts"><h4>❌ Don'ts</h4><ul><li>Don't fill up on junk/empty calories (chips, soda)</li><li>Don't drink water right before meals</li></ul></div>
+</div>
+</div>
+
+<div id="plan2" class="diet-plan">
+<h2>⚖️ Weight Loss</h2>
+<div class="meal-grid">
+  <div class="meal-time"><h4>🌅 Morning</h4><p>Masala Oats or Dalia, Green Tea, Apple</p></div>
+  <div class="meal-time"><h4>☀️ Afternoon</h4><p>Brown Rice, 1 Bowl Dal, Huge Bowl of Fresh Salad</p></div>
+  <div class="meal-time"><h4>🌇 Evening</h4><p>Roasted Makhana, Clear Vegetable Soup</p></div>
+  <div class="meal-time"><h4>🌙 Dinner</h4><p>Multigrain Roti with Green Sabzi, Light Dal</p></div>
+</div>
+<div class="dos-donts">
+  <div class="dos"><h4>✅ Do's</h4><ul><li>Maintain a caloric deficit</li><li>Eat high-fiber vegetables with every meal</li><li>Sleep 7-8 hours for metabolism</li></ul></div>
+  <div class="donts"><h4>❌ Don'ts</h4><ul><li>Don't eat heavy carbs after 8 PM</li><li>Avoid sugar, sweets, and fried snacks</li></ul></div>
+</div>
+</div>
+
+<div id="plan3" class="diet-plan">
+<h2>💪 Muscle Build</h2>
+<div class="meal-grid">
+  <div class="meal-time"><h4>🌅 Morning</h4><p>4 Egg Whites + 1 Whole Egg, Oatmeal</p></div>
+  <div class="meal-time"><h4>☀️ Afternoon</h4><p>Chicken Breast / Tofu, Rice, Broccoli</p></div>
+  <div class="meal-time"><h4>🌇 Evening</h4><p>Whey Protein Shake, Black Coffee (Pre-workout), Greek Yogurt</p></div>
+  <div class="meal-time"><h4>🌙 Dinner</h4><p>Paneer Bhurji / Grilled Fish, 2 Rotis, Veggies</p></div>
+</div>
+<div class="dos-donts">
+  <div class="dos"><h4>✅ Do's</h4><ul><li>Consume protein within 30 mins post-workout</li><li>Progressive overload in the gym</li><li>Stay hydrated</li></ul></div>
+  <div class="donts"><h4>❌ Don'ts</h4><ul><li>Don't skip meals, especially protein</li><li>Avoid excessive cardio</li></ul></div>
+</div>
+</div>
+
+<div id="plan4" class="diet-plan">
+<h2>🧘 Healthy Living</h2>
+<div class="meal-grid">
+  <div class="meal-time"><h4>🌅 Morning</h4><p>Poha or Upma, Fresh Papaya</p></div>
+  <div class="meal-time"><h4>☀️ Afternoon</h4><p>Balanced Thali (Dal, Rice, Sabzi, 2 Rotis, Curd)</p></div>
+  <div class="meal-time"><h4>🌇 Evening</h4><p>Mixed Fruits (Apple, Banana), Green Tea</p></div>
+  <div class="meal-time"><h4>🌙 Dinner</h4><p>Besan Chilla, Warm Turmeric Milk before bed</p></div>
+</div>
+<div class="dos-donts">
+  <div class="dos"><h4>✅ Do's</h4><ul><li>Eat seasonal fruits and vegetables</li><li>Chew your food slowly</li><li>Walk 10,000 steps daily</li></ul></div>
+  <div class="donts"><h4>❌ Don'ts</h4><ul><li>Don't eat packaged/processed foods daily</li><li>Limit caffeine to 2 cups a day</li></ul></div>
+</div>
+</div>
+
+<div id="plan5" class="diet-plan">
+<h2>🩺 Diabetic</h2>
+<div class="meal-grid">
+  <div class="meal-time"><h4>🌅 Morning</h4><p>Multigrain Toast with Peanut Butter, Bitter Gourd Juice</p></div>
+  <div class="meal-time"><h4>☀️ Afternoon</h4><p>Brown Rice / Broken Wheat, Moong Dal, Bitter Veggies</p></div>
+  <div class="meal-time"><h4>🌇 Evening</h4><p>Roasted Chana, Walnuts, Green Tea</p></div>
+  <div class="meal-time"><h4>🌙 Dinner</h4><p>Methi or Palak Roti, Grilled Tikka (No Butter)</p></div>
+</div>
+<div class="dos-donts">
+  <div class="dos"><h4>✅ Do's</h4><ul><li>Monitor blood sugar regularly</li><li>Eat foods with a low Glycemic Index (GI)</li><li>Eat strictly on time</li></ul></div>
+  <div class="donts"><h4>❌ Don'ts</h4><ul><li>Strictly NO refined sugar or white rice</li><li>Avoid fruit juices (eat whole fruits instead)</li></ul></div>
+</div>
+</div>
+
+<div id="plan6" class="diet-plan">
+<h2>🫀 Heart Healthy</h2>
+<div class="meal-grid">
+  <div class="meal-time"><h4>🌅 Morning</h4><p>Oatmeal Porridge with Almonds & Walnuts</p></div>
+  <div class="meal-time"><h4>☀️ Afternoon</h4><p>Steamed Veggies, Roti without Ghee, Yellow Dal</p></div>
+  <div class="meal-time"><h4>🌇 Evening</h4><p>Olive Oil Dressed Salad, Clear Soup</p></div>
+  <div class="meal-time"><h4>🌙 Dinner</h4><p>Moong Dal Chilla, Grilled Soya Chaap (Less Oil)</p></div>
+</div>
+<div class="dos-donts">
+  <div class="dos"><h4>✅ Do's</h4><ul><li>Use healthy fats like Olive Oil or Mustard Oil</li><li>Increase Omega-3 intake (Flaxseeds, Walnuts)</li><li>Exercise for 30 mins daily</li></ul></div>
+  <div class="donts"><h4>❌ Don'ts</h4><ul><li>Strictly avoid trans fats and palm oil</li><li>Keep salt/sodium intake extremely low</li></ul></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<script>
+function calculateBMI() {
+  const height = parseFloat(document.getElementById('bmi-height').value);
+  const weight = parseFloat(document.getElementById('bmi-weight').value);
+  const resultDiv = document.getElementById('bmi-result');
+  
+  if(!height || !weight || height <= 0 || weight <= 0) {
+    resultDiv.innerHTML = "<span style='color: #e74c3c;'>Please enter valid height and weight.</span>";
+    resultDiv.style.display = "block";
+    return;
+  }
+  
+  const heightM = height / 100;
+  const bmi = (weight / (heightM * heightM)).toFixed(1);
+  let category = "";
+  let planId = "";
+  let planName = "";
+  let color = "";
+  
+  if(bmi < 18.5) {
+    category = "Underweight";
+    planId = "g1"; // Weight Gain
+    planName = "Weight Gain";
+    color = "#f09819"; 
+  } else if(bmi >= 18.5 && bmi <= 24.9) {
+    category = "Normal Weight";
+    planId = "g4"; // Healthy Living
+    planName = "Healthy Living";
+    color = "#2ecc71"; 
+  } else {
+    category = "Overweight";
+    planId = "g2"; // Weight Loss
+    planName = "Weight Loss";
+    color = "#ff512f"; 
+  }
+  
+  // Show result
+  resultDiv.innerHTML = `Your BMI is <strong style="font-size:1.2rem">${bmi}</strong> (<span style="color:${color}; font-weight:bold">${category}</span>). <br><br> We recommend the <strong style="color:var(--primary)">${planName}</strong> plan!`;
+  resultDiv.style.display = "block";
+  resultDiv.style.borderLeft = `4px solid ${color}`;
+  
+  // Auto-select the radio button
+  document.getElementById(planId).checked = true;
+  
+  // Scroll to the selected plan
+  setTimeout(() => {
+    document.getElementById('plan' + planId.replace('g','')).scrollIntoView({behavior: 'smooth', block: 'center'});
+  }, 400);
+}
+</script>
+<script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - Venky's</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link rel="stylesheet" href="venkys_menu.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="restruant.html">← Back to Restaurants</a>
+</div>
+
+<div class="hero">
+  <h2>🍗 Venky's</h2>
+  <p>⭐ 4.4 &nbsp;|&nbsp; ⏱ 20–30 min &nbsp;|&nbsp; 🛵 Free Delivery</p>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showSection('noodles', this)">🍜 Noodles</button>
+  <button class="tab" onclick="showSection('fries', this)">🍟 Fries</button>
+  <button class="tab" onclick="showSection('sides', this)">🍱 Sides</button>
+</div>
+
+<div class="menu">
+
+  <!-- NOODLES -->
+  <div class="section active" id="noodles">
+    <h3>🍜 Noodles</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍜</div>
+        <h4>Veg Hakka Noodles</h4>
+        <p>Classic stir-fried hakka noodles with veggies</p>
+        <p class="price">₹129</p>
+        <button onclick="order('Veg Hakka Noodles')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍜</div>
+        <h4>Chicken Hakka Noodles</h4>
+        <p>Hakka noodles tossed with shredded chicken</p>
+        <p class="price">₹159</p>
+        <button onclick="order('Chicken Hakka Noodles')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🌶️</div>
+        <h4>Schezwan Noodles</h4>
+        <p>Spicy schezwan sauce tossed noodles</p>
+        <p class="price">₹149</p>
+        <button onclick="order('Schezwan Noodles')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FRIES -->
+  <div class="section" id="fries">
+    <h3>🍟 French Fries</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍟</div>
+        <h4>Classic Fries</h4>
+        <p>Crispy golden salted fries</p>
+        <p class="price">₹79</p>
+        <button onclick="order('Classic Fries')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🌶️</div>
+        <h4>Peri Peri Fries</h4>
+        <p>Fries tossed in spicy peri peri masala</p>
+        <p class="price">₹99</p>
+        <button onclick="order('Peri Peri Fries')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🧀</div>
+        <h4>Cheese Fries</h4>
+        <p>Golden fries with melted cheese sauce</p>
+        <p class="price">₹119</p>
+        <button onclick="order('Cheese Fries')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SIDES -->
+  <div class="section" id="sides">
+    <h3>🍱 Sides</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🥣</div>
+        <h4>Veg Fried Rice</h4>
+        <p>Wok-tossed rice with vegetables & soy</p>
+        <p class="price">₹129</p>
+        <button onclick="order('Veg Fried Rice')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🧆</div>
+        <h4>Veg Momos (6 pcs)</h4>
+        <p>Steamed momos with spicy chutney</p>
+        <p class="price">₹89</p>
+        <button onclick="order('Veg Momos')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🌭</div>
+        <h4>Corn Dog</h4>
+        <p>Crispy battered corn dog with ketchup</p>
+        <p class="price">₹79</p>
+        <button onclick="order('Corn Dog')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="venkys_menu.js"></script>
+
+<script src="cart.js"></script>
+</body>
+</html>

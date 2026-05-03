@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chatora AF - Your Cart</title>
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="cart.css">
+<style>
+  body {
+    background-color: var(--dark, #0d0d0d);
+    margin: 0;
+    color: var(--text, #f0f0f0);
+    padding-top: 80px; /* Space for navbar */
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+<div class="cart-page-container">
+  <div class="cart-header">
+    <h1>Your Cart 🛒</h1>
+  </div>
+  
+  <div class="cart-content">
+    <div class="cart-items-section" id="cart-items-container">
+      <!-- Items dynamically populated here -->
+    </div>
+    
+    <div class="cart-summary-section" id="cart-summary-container">
+      <!-- Summary dynamically populated here -->
+    </div>
+  </div>
+</div>
+
+<script src="cart.js"></script>
+</body>
+</html>

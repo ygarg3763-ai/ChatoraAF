@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - BEV Cafe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link rel="stylesheet" href="bevcafe_menu.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="restruant.html">← Back to Restaurants</a>
+</div>
+
+<div class="hero">
+  <h2>☕ BEV Cafe</h2>
+  <p>⭐ 4.4 &nbsp;|&nbsp; ⏱ 10–20 min &nbsp;|&nbsp; 🛵 Free Delivery</p>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showSection('chips', this)">🍟 Chips</button>
+  <button class="tab" onclick="showSection('drinks', this)">🥤 Soft Drinks</button>
+  <button class="tab" onclick="showSection('patty', this)">🍔 Patty</button>
+</div>
+
+<div class="menu">
+
+  <!-- CHIPS -->
+  <div class="section active" id="chips">
+    <h3>🍟 Chips & Namkeen</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍟</div>
+        <h4>Lays Classic Salted</h4>
+        <p class="price">₹25</p>
+        <button onclick="order('Lays Classic Salted')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍟</div>
+        <h4>Blue Lays</h4>
+        <p class="price">₹25</p>
+        <button onclick="order('Blue Lays')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🌶️</div>
+        <h4>TakaTak</h4>
+        <p>Crunchy & spicy</p>
+        <p class="price">₹25</p>
+        <button onclick="order('TakaTak')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🌶️</div>
+        <h4>Thede Medhe </h4>
+        <p>Tangy chutney flavour</p>
+        <p class="price">₹20</p>
+        <button onclick="order('Thede Medhe')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SOFT DRINKS -->
+  <div class="section" id="drinks">
+    <h3>🥤 Soft Drinks</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🥤</div>
+        <h4>Coca Cola</h4>
+        <p>330ml Can</p>
+        <p class="price">₹40</p>
+        <button onclick="order('Coca Cola')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🥤</div>
+        <h4>Sprite</h4>
+        <p>330ml Can</p>
+        <p class="price">₹40</p>
+        <button onclick="order('Sprite')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🧃</div>
+        <h4>Maaza</h4>
+        <p>250ml Bottle</p>
+        <p class="price">₹30</p>
+        <button onclick="order('Maaza')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PATTY -->
+  <div class="section" id="patty">
+    <h3>🍔 Patty</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍔</div>
+        <h4>Aloo Patty</h4>
+        <p>Crispy spiced potato patty</p>
+        <p class="price">₹49</p>
+        <button onclick="order('Aloo Patty')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🧀</div>
+        <h4>Cheese Patty</h4>
+        <p>Aloo patty loaded with melted cheese</p>
+        <p class="price">₹69</p>
+        <button onclick="order('Cheese Patty')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🌶️</div>
+        <h4>Spicy Patty</h4>
+        <p>Extra masala patty with green chutney</p>
+        <p class="price">₹55</p>
+        <button onclick="order('Spicy Patty')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="bevcafe_menu.js"></script>
+
+<script src="cart.js"></script>
+</body>
+</html>

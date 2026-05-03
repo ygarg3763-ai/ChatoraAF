@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - Momos Hunter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">\
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link rel="stylesheet" href="momo_menu.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="restruant.html">← Back to Restaurants</a>
+</div>
+
+<div class="hero">
+  <h2>🥟 Momos Hunter</h2>
+  <p>⭐ 4.6 | ⏱ 15–25 min | 🛵 Free Delivery</p>
+  <p style="margin-top:8px; font-size:12px;">Hot & Juicy Momos 🔥</p>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showSection('veg', this)">🥦 Veg Momos</button>
+  <button class="tab" onclick="showSection('nonveg', this)">🍗 Non-Veg Momos</button>
+  <button class="tab" onclick="showSection('special', this)">🔥 Special</button>
+</div>
+
+<div class="menu">
+
+  <!-- VEG MOMOS -->
+  <div class="section active" id="veg">
+    <h3>🥦 Veg Momos</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🥟</div>
+        <h4>Steamed Veg Momos</h4>
+        <p>Classic steamed veggie dumplings</p>
+        <p class="price">₹80</p>
+        <button onclick="order('Steamed Veg Momos')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🔥</div>
+        <h4>Fried Veg Momos</h4>
+        <p>Crispy fried momos with chutney</p>
+        <p class="price">₹100</p>
+        <button onclick="order('Fried Veg Momos')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🌶</div>
+        <h4>Paneer Momos</h4>
+        <p>Stuffed with spicy paneer filling</p>
+        <p class="price">₹110</p>
+        <button onclick="order('Paneer Momos')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- NON VEG -->
+  <div class="section" id="nonveg">
+    <h3>🍗 Non-Veg Momos</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍗</div>
+        <h4>Chicken Momos</h4>
+        <p>Juicy chicken filled dumplings</p>
+        <p class="price">₹120</p>
+        <button onclick="order('Chicken Momos')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🔥</div>
+        <h4>Fried Chicken Momos</h4>
+        <p>Crispy fried chicken momos</p>
+        <p class="price">₹140</p>
+        <button onclick="order('Fried Chicken Momos')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SPECIAL -->
+  <div class="section" id="special">
+    <h3>🔥 Special Momos</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🔥</div>
+        <h4>Tandoori Momos</h4>
+        <p>Smoky grilled momos with spices</p>
+        <p class="price">₹150</p>
+        <button onclick="order('Tandoori Momos')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🧀</div>
+        <h4>Cheese Burst Momos</h4>
+        <p>Momos loaded with melted cheese</p>
+        <p class="price">₹160</p>
+        <button onclick="order('Cheese Burst Momos')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🌶</div>
+        <h4>Afghani Momos</h4>
+        <p>Creamy spicy white sauce momos</p>
+        <p class="price">₹170</p>
+        <button onclick="order('Afghani Momos')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="momo_menu.js"></script>
+
+<script src="cart.js"></script>
+</body>
+</html>

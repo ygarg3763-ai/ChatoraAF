@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - Chaap n Grill</title>
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="chaap_menu.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="restruant.html">← Back to Restaurants</a>
+</div>
+
+<div class="hero">
+  <h2>🔥 Chaap n Grill</h2>
+  <p>⭐ 4.3 &nbsp;|&nbsp; ⏱ 20–30 min &nbsp;|&nbsp; 🛵 Free Delivery</p>
+  <p style="margin-top:8px; font-size:12px;">Served with mint chutney & onion rings</p>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showSection('dry', this)">🍢 Dry Chaap</button>
+  <button class="tab" onclick="showSection('gravy', this)">🥘 Gravy Chaap</button>
+</div>
+
+<div class="menu">
+
+  <!-- DRY CHAAP -->
+  <div class="section active" id="dry">
+    <h3>🍢 Dry Chaap</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍢</div>
+        <h4>Tandoori Chaap</h4>
+        <p>Smoky soya chaap from tandoor</p>
+        <p class="price">₹129</p>
+        <button onclick="order('Tandoori Chaap')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍢</div>
+        <h4>Malai Chaap</h4>
+        <p>Creamy malai marinated chaap</p>
+        <p class="price">₹149</p>
+        <button onclick="order('Malai Chaap')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍢</div>
+        <h4>Peri Peri Chaap</h4>
+        <p>Spicy peri peri grilled chaap</p>
+        <p class="price">₹139</p>
+        <button onclick="order('Peri Peri Chaap')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍢</div>
+        <h4>Afghani Chaap</h4>
+        <p>Rich cashew & cream marination</p>
+        <p class="price">₹159</p>
+        <button onclick="order('Afghani Chaap')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GRAVY CHAAP -->
+  <div class="section" id="gravy">
+    <h3>🥘 Gravy Chaap</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🥘</div>
+        <h4>Butter Masala Chaap</h4>
+        <p>Chaap in rich tomato butter gravy</p>
+        <p class="price">₹169</p>
+        <button onclick="order('Butter Masala Chaap')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🥘</div>
+        <h4>Achari Chaap</h4>
+        <p>Tangy pickle-spiced gravy</p>
+        <p class="price">₹159</p>
+        <button onclick="order('Achari Chaap')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🥘</div>
+        <h4>Kadai Chaap</h4>
+        <p>Tossed in spicy kadai masala</p>
+        <p class="price">₹169</p>
+        <button onclick="order('Kadai Chaap')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="chaap_menu.js"></script>
+
+<script src="cart.js"></script>
+</body>
+</html>

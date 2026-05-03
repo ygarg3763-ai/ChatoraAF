@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - Chai Vyanjan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link rel="stylesheet" href="chaiv_menu.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="restruant.html">← Back to Restaurants</a>
+</div>
+
+<div class="hero">
+  <h2>🍵 Chai Vyanjan</h2>
+  <p>⭐ 4.6 | ⏱ 10–15 min | 🛵 Free Delivery</p>
+  <p style="margin-top:8px; font-size:12px;">Desi Chai, Dil Se ❤️</p>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showSection('chai', this)">🍵 Chai</button>
+  <button class="tab" onclick="showSection('snacks', this)">🍪 Snacks</button>
+</div>
+
+<div class="menu">
+
+  <!-- CHAI -->
+  <div class="section active" id="chai">
+    <h3>🍵 Popular Chai</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍵</div>
+        <h4>Masala Chai</h4>
+        <p>Classic Indian tea with spices</p>
+        <p class="price">₹30</p>
+        <button onclick="order('Masala Chai')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🫖</div>
+        <h4>Adrak Chai</h4>
+        <p>Refreshing ginger flavored tea</p>
+        <p class="price">₹35</p>
+        <button onclick="order('Adrak Chai')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🌿</div>
+        <h4>Elaichi Chai</h4>
+        <p>Aromatic cardamom infused tea</p>
+        <p class="price">₹35</p>
+        <button onclick="order('Elaichi Chai')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">☕</div>
+        <h4>Kulhad Chai</h4>
+        <p>Traditional tea served in kulhad</p>
+        <p class="price">₹40</p>
+        <button onclick="order('Kulhad Chai')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SNACKS -->
+  <div class="section" id="snacks">
+    <h3>🍪 Tea Time Snacks</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍪</div>
+        <h4>Rusk</h4>
+        <p>Crispy toasted bread for chai</p>
+        <p class="price">₹20</p>
+        <button onclick="order('Rusk')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🥨</div>
+        <h4>Mathri</h4>
+        <p>Crunchy savory snack</p>
+        <p class="price">₹25</p>
+        <button onclick="order('Mathri')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍞</div>
+        <h4>Bun Maska</h4>
+        <p>Soft bun with butter</p>
+        <p class="price">₹40</p>
+        <button onclick="order('Bun Maska')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍜</div>
+        <h4>Maggi</h4>
+        <p>Hot masala Maggi</p>
+        <p class="price">₹50</p>
+        <button onclick="order('Maggi')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="chaiv_menu.js"></script>
+
+<script src="cart.js"></script>
+</body>
+</html>

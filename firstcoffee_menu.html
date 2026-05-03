@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - First Coffee</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link rel="stylesheet" href="firstcoffee_menu.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="restruant.html">← Back to Restaurants</a>
+</div>
+
+<div class="hero">
+  <h2>☕ First Coffee</h2>
+  <p>⭐ 4.3 &nbsp;|&nbsp; ⏱ 20–30 min &nbsp;|&nbsp; 🛵 Free Delivery</p>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <button class="tab active" onclick="showSection('hot', this)">☕ Hot Coffee</button>
+  <button class="tab" onclick="showSection('cold', this)">🧊 Cold Coffee</button>
+  <button class="tab" onclick="showSection('snacks', this)">🥪 Snacks</button>
+</div>
+
+<!-- MENU SECTIONS -->
+<div class="menu">
+
+  <div class="section active" id="hot">
+    <h3>☕ Hot Coffee</h3>
+    <div class="cards">
+      <div class="card">
+        <div class="card-img">☕</div>
+        <h4>Espresso</h4>
+        <p>Bold single-shot espresso</p>
+        <p class="price">₹99</p>
+        <button onclick="order('Espresso')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <div class="card-img">🫖</div>
+        <h4>Cappuccino</h4>
+        <p>Espresso with velvety foam</p>
+        <p class="price">₹149</p>
+        <button onclick="order('Cappuccino')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <div class="card-img">☕</div>
+        <h4>Café Latte</h4>
+        <p>Creamy latte with steamed milk</p>
+        <p class="price">₹159</p>
+        <button onclick="order('Café Latte')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <div class="card-img">🍵</div>
+        <h4>Americano</h4>
+        <p>Espresso diluted with hot water</p>
+        <p class="price">₹129</p>
+        <button onclick="order('Americano')">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="cold">
+    <h3>🧊 Cold Coffee</h3>
+    <div class="cards">
+      <div class="card">
+        <div class="card-img">🧋</div>
+        <h4>Cold Brew</h4>
+        <p>Slow-steeped, ultra-smooth</p>
+        <p class="price">₹179</p>
+        <button onclick="order('Cold Brew')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <div class="card-img">🥤</div>
+        <h4>Iced Latte</h4>
+        <p>Espresso over ice with chilled milk</p>
+        <p class="price">₹169</p>
+        <button onclick="order('Iced Latte')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <div class="card-img">🍫</div>
+        <h4>Mocha Frappe</h4>
+        <p>Blended coffee with chocolate</p>
+        <p class="price">₹199</p>
+        <button onclick="order('Mocha Frappe')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <div class="card-img">☁️</div>
+        <h4>Dalgona Coffee</h4>
+        <p>Whipped foam on chilled milk</p>
+        <p class="price">₹189</p>
+        <button onclick="order('Dalgona Coffee')">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="snacks">
+    <h3>🥪 Snacks</h3>
+    <div class="cards">
+      <div class="card">
+        <div class="card-img">🥐</div>
+        <h4>Butter Croissant</h4>
+        <p>Flaky, golden & buttery</p>
+        <p class="price">₹89</p>
+        <button onclick="order('Butter Croissant')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <div class="card-img">🥪</div>
+        <h4>Club Sandwich</h4>
+        <p>Triple-layered toasted sandwich</p>
+        <p class="price">₹149</p>
+        <button onclick="order('Club Sandwich')">Add to Cart</button>
+      </div>
+      <div class="card">
+        <div class="card-img">🍫</div>
+        <h4>Choco Brownie</h4>
+        <p>Warm fudgy brownie, best with coffee!</p>
+        <p class="price">₹129</p>
+        <button onclick="order('Choco Brownie')">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="firstcoffee_menu.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>

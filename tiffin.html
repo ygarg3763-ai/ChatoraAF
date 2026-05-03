@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiffin Subscriptions — ChatoraAF</title>
+  <meta name="description" content="Subscribe to fresh, homemade tiffin meals delivered daily. Choose Basic, Standard, or Premium plans.">
+  <link rel="icon" type="image/png" href="wlcmchotora.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="tiffin.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="tiffin-hero">
+  <h1>🍱 <span>Tiffin</span> Subscriptions</h1>
+  <p>Fresh, homemade meals delivered to your door every day. Pick a plan, choose your duration, and enjoy hassle-free eating.</p>
+</div>
+
+<!-- PLAN CARDS — rendered by JS -->
+<div id="tiffin-cards-container"></div>
+
+<!-- ACTIVE SUBSCRIPTIONS -->
+<div id="active-subs-section">
+  <div class="subs-section-header">
+    <div class="subs-pulse"></div>
+    <h2>Your Active Subscriptions</h2>
+  </div>
+  <div id="active-subs-container"></div>
+</div>
+
+<!-- FEATURES -->
+<div class="tiffin-features">
+  <h2>Why Choose Us?</h2>
+  <div class="features-row">
+    <div class="feature-box">
+      <span class="feature-icon">🥗</span>
+      <span class="feature-label">Fresh & Hygienic</span>
+    </div>
+    <div class="feature-box">
+      <span class="feature-icon">🚚</span>
+      <span class="feature-label">On-Time Delivery</span>
+    </div>
+    <div class="feature-box">
+      <span class="feature-icon">💰</span>
+      <span class="feature-label">Affordable Plans</span>
+    </div>
+    <div class="feature-box">
+      <span class="feature-icon">👩‍🍳</span>
+      <span class="feature-label">Homemade Taste</span>
+    </div>
+  </div>
+</div>
+
+<!-- SUBSCRIBE MODAL -->
+<div id="subscribe-modal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeSubscribeModal()">✕</button>
+
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <img id="modal-plan-img" src="" alt="Plan Image">
+      <div class="modal-header-info">
+        <h3 id="modal-plan-name"></h3>
+        <p id="modal-plan-desc"></p>
+        <span class="modal-header-price" id="modal-plan-price"></span>
+      </div>
+    </div>
+
+    <!-- Duration Selection -->
+    <div class="modal-section">
+      <div class="modal-section-label">Choose Duration</div>
+      <div id="modal-duration-options"></div>
+    </div>
+
+    <!-- Meal Time Selection -->
+    <div class="modal-section">
+      <div class="modal-section-label">Meal Time</div>
+      <div id="modal-meal-options"></div>
+    </div>
+
+    <!-- Price Summary -->
+    <div class="modal-section">
+      <div class="modal-section-label">Price Summary</div>
+      <div id="modal-summary">
+        <p class="summary-hint">Select duration & meal time to see pricing</p>
+      </div>
+      <button id="modal-confirm-btn" disabled onclick="confirmSubscription()">Confirm Subscription 🚀</button>
+    </div>
+  </div>
+</div>
+
+<script src="cart.js"></script>
+<script src="tiffin.js"></script>
+</body>
+</html>

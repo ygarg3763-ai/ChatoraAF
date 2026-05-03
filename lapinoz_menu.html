@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - La Pino'z Pizza</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link rel="stylesheet" href="lapinoz_menu.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="restruant.html">← Back to Restaurants</a>
+</div>
+
+<div class="hero">
+  <h2>🍕 La Pino'z Pizza</h2>
+  <p>⭐ 4.6 &nbsp;|&nbsp; ⏱ 25–35 min &nbsp;|&nbsp; 🛵 Free Delivery</p>
+  <p style="margin-top:8px; font-size:12px;">India's Biggest Homegrown Pizza Brand 🇮🇳</p>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showSection('veg', this)">🟢 Veg Pizza</button>
+  <button class="tab" onclick="showSection('nonveg', this)">🔴 Non-Veg Pizza</button>
+  <button class="tab" onclick="showSection('sides', this)">🍞 Sides</button>
+</div>
+
+<div class="menu">
+
+  <!-- VEG PIZZA -->
+  <div class="section active" id="veg">
+    <h3>🟢 Veg Pizzas</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍕</div>
+        <h4>Margherita</h4>
+        <p>Classic cheesy margherita</p>
+        <p class="size-note">Medium (8")</p>
+        <p class="price">₹199</p>
+        <button onclick="order('Margherita')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍕</div>
+        <h4>Farm Villa</h4>
+        <p>Onion, capsicum, paneer, sweet corn & olives</p>
+        <p class="size-note">Medium (8")</p>
+        <p class="price">₹299</p>
+        <button onclick="order('Farm Villa')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍕</div>
+        <h4>Paneer Tikka</h4>
+        <p>Exotic paneer tikka, onion, capsicum & red paprika</p>
+        <p class="size-note">Medium (8")</p>
+        <p class="price">₹329</p>
+        <button onclick="order('Paneer Tikka Pizza')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍕</div>
+        <h4>Cheezy-7</h4>
+        <p>Onion, capsicum, mushroom, paneer & olives</p>
+        <p class="size-note">Medium (8")</p>
+        <p class="price">₹349</p>
+        <button onclick="order('Cheezy-7')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍕</div>
+        <h4>Mushroom Delight</h4>
+        <p>Tossed mushrooms, olives & sweet corn</p>
+        <p class="size-note">Medium (8")</p>
+        <p class="price">₹299</p>
+        <button onclick="order('Mushroom Delight')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍕</div>
+        <h4>Jalapeno Fiesta</h4>
+        <p>Mushrooms, jalapeños, sweet corn, capsicum & tomatoes</p>
+        <p class="size-note">Medium (8")</p>
+        <p class="price">₹319</p>
+        <button onclick="order('Jalapeno Fiesta')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- NON VEG PIZZA -->
+  <div class="section" id="nonveg">
+    <h3>🔴 Non-Veg Pizzas</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍕</div>
+        <h4>Chicken Tikka</h4>
+        <p>Tandoori chicken tikka with onion & capsicum</p>
+        <p class="size-note">Medium (8")</p>
+        <p class="price">₹369</p>
+        <button onclick="order('Chicken Tikka Pizza')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍕</div>
+        <h4>Tandoori Chicken</h4>
+        <p>Smoky tandoori chicken with red paprika</p>
+        <p class="size-note">Medium (8")</p>
+        <p class="price">₹379</p>
+        <button onclick="order('Tandoori Chicken Pizza')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍕</div>
+        <h4>Butter Chicken</h4>
+        <p>Creamy butter chicken with onion & capsicum</p>
+        <p class="size-note">Medium (8")</p>
+        <p class="price">₹399</p>
+        <button onclick="order('Butter Chicken Pizza')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍕</div>
+        <h4>Texas BBQ</h4>
+        <p>Smoky BBQ chicken with onion & bell peppers</p>
+        <p class="size-note">Medium (8")</p>
+        <p class="price">₹389</p>
+        <button onclick="order('Texas BBQ Pizza')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SIDES -->
+  <div class="section" id="sides">
+    <h3>🍞 Sides & More</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🥖</div>
+        <h4>Garlic Bread</h4>
+        <p>Warm buttery garlic bread (4 pcs)</p>
+        <p class="price">₹99</p>
+        <button onclick="order('Garlic Bread')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🧀</div>
+        <h4>Cheese Garlic Bread</h4>
+        <p>Garlic bread loaded with cheese (4 pcs)</p>
+        <p class="price">₹129</p>
+        <button onclick="order('Cheese Garlic Bread')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍝</div>
+        <h4>Penne Arrabbiata</h4>
+        <p>Penne in spicy tomato sauce</p>
+        <p class="price">₹169</p>
+        <button onclick="order('Penne Arrabbiata')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🥤</div>
+        <h4>Coca Cola</h4>
+        <p>330ml chilled can</p>
+        <p class="price">₹60</p>
+        <button onclick="order('Coca Cola')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="lapinoz_menu.js"></script>
+
+<script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - Golzza</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link rel="stylesheet" href="golzza_menu.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="restruant.html">← Back to Restaurants</a>
+</div>
+
+<div class="hero">
+  <h2>🥟 Golzza</h2>
+  <p>⭐ 4.5 | ⏱ 10–20 min | 🛵 Free Delivery</p>
+  <p style="margin-top:8px; font-size:12px;">Street Food Lovers Paradise 😋</p>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showSection('chaat', this)">🥟 Chaat</button>
+  <button class="tab" onclick="showSection('snacks', this)">🍽 Snacks</button>
+  <button class="tab" onclick="showSection('drinks', this)">🥤 Drinks</button>
+</div>
+
+<div class="menu">
+
+  <!-- CHAAT -->
+  <div class="section active" id="chaat">
+    <h3>🥟 Chaat Specials</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🥟</div>
+        <h4>Golgappe</h4>
+        <p>Crispy puris with tangy pani</p>
+        <p class="price">₹50</p>
+        <button onclick="order('Golgappe')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🥗</div>
+        <h4>Papdi Chaat</h4>
+        <p>Crispy papdi with chutneys & curd</p>
+        <p class="price">₹80</p>
+        <button onclick="order('Papdi Chaat')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🥣</div>
+        <h4>Dahi Bhalla</h4>
+        <p>Soft bhallas soaked in curd</p>
+        <p class="price">₹90</p>
+        <button onclick="order('Dahi Bhalla')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SNACKS -->
+  <div class="section" id="snacks">
+    <h3>🍽 Snacks</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🥟</div>
+        <h4>Samosa Chaat</h4>
+        <p>Crushed samosa with chutney & curd</p>
+        <p class="price">₹70</p>
+        <button onclick="order('Samosa Chaat')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DRINKS -->
+  <div class="section" id="drinks">
+    <h3>🥤 Refreshing Drinks</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🥤</div>
+        <h4>Slush</h4>
+        <p>Chilled flavored icy drink</p>
+        <p class="price">₹60</p>
+        <button onclick="order('Slush')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="golzza_menu.js"></script>
+
+
+<script src="cart.js"></script>
+</body>
+</html>

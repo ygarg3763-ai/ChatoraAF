@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chatora AF - Budget Friendly</title>
+  <link rel="icon" type="image/png" href="wlcmchotora.png">
+
+  <link rel="stylesheet" href="budget.css">
+
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <!-- NAVBAR -->
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo" style="display: flex; align-items: center;">
+      <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+      CHATORAAF
+    </div>
+    <div class="nav-search">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search food, restaurants...">
+    </div>
+    <div class="nav-loc hm">
+      <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+      <select>
+        <option>Chitkara University, Patiala</option>
+        <option>Banur</option>
+        <option>Rajpura</option>
+        <option>Jhansla</option>
+      </select>
+    </div>
+    <div class="nav-links">
+      <a href="homepage.html" class="hm">Home</a>
+      <a href="restruant.html" class="hm">Restaurants</a>
+      <a href="tiffin.html" class="hm">Tiffin</a>
+      <a href="dietplan.html" class="hm">Diet Plans</a>
+      <a href="budget.html" class="hm">Budget</a>
+      <a href="grouporder.html" class="hm">Group Order</a>
+      <a href="profile.html" class="hm">Profile</a>
+      <a href="cart.html" class="cart">🛒 Cart</a>
+    </div>
+  </nav>
+
+
+  <header>
+    <h1>💸 Chatora AF</h1>
+    <p>Find Restaurants Within Your Budget</p>
+  </header>
+
+  <div class="container">
+    <div class="budget-input-wrapper">
+      <i class="fas fa-wallet"></i>
+      <input type="number" id="budget" placeholder="Enter Maximum Budget (₹)">
+    </div>
+    <button class="search-btn" onclick="filterRestaurants()">Find Food</button>
+  </div>
+
+  <section class="restaurant-container" id="restaurants"></section>
+
+  <script src="database.js"></script>
+  <script src="budget.js"></script>
+  <script src="cart.js"></script>
+</body>
+
+</html>

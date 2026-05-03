@@ -1,0 +1,133 @@
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+  }
+
+  header {
+    background: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  header p { margin: 5px 0 0; font-size: 14px; }
+
+  .back {
+    padding: 10px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .back a {
+    color: #ff5722;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .hero {
+    background: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .hero h2 { font-size: 1.6rem; margin: 0 0 6px; }
+  .hero p  { font-size: 13px; opacity: 0.8; margin: 4px 0; }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    padding: 8px 20px;
+    border: 2px solid #ff5722;
+    border-radius: 20px;
+    background: white;
+    color: #ff5722;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .tab.active { background: #ff5722; color: white; }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .section { display: none; width: 100%; }
+  .section.active { display: block; }
+
+  .section h3 {
+    text-align: center;
+    color: #ff5722;
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .card {
+    background: white;
+    width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+  .card:hover { transform: scale(1.05); }
+
+  .card-img {
+    font-size: 3rem;
+    padding: 20px 0 10px;
+    background: #fff3ef;
+  }
+
+  .card h4 { margin: 10px 0 4px; font-size: 0.95rem; }
+  .card p  { color: #777; font-size: 13px; margin: 0 10px 8px; }
+
+  .price {
+    color: #ff5722;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 4px 0 !important;
+  }
+
+  .size-note {
+    font-size: 11px;
+    color: #aaa;
+    margin: 0 !important;
+  }
+
+  button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 9px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    font-size: 14px;
+  }
+
+  button:hover { background: #e64a19; }

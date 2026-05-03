@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - Belgian Waffle</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+<link rel="stylesheet" href="belgian_menu.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="restruant.html">← Back to Restaurants</a>
+</div>
+
+<div class="hero">
+  <h2>🧇 Belgian Waffle Co.</h2>
+  <p>⭐ 4.6 &nbsp;|&nbsp; ⏱ 15–25 min &nbsp;|&nbsp; 🛵 Free Delivery</p>
+  <p style="margin-top:8px; font-size:12px;">100% Vegetarian • Eggless Batter 🌿</p>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showSection('classic', this)">🧇 Classic</button>
+  <button class="tab" onclick="showSection('choco', this)">🍫 Chocolate</button>
+  <button class="tab" onclick="showSection('special', this)">⭐ Special</button>
+  <button class="tab" onclick="showSection('drinks', this)">🥤 Drinks</button>
+</div>
+
+<div class="menu">
+
+  <!-- CLASSIC WAFFLES -->
+  <div class="section active" id="classic">
+    <h3>🧇 Classic Waffles</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🧇</div>
+        <h4>Naked Nutella</h4>
+        <p>Crispy waffle with premium Nutella spread</p>
+        <p class="price">₹149</p>
+        <button onclick="order('Naked Nutella Waffle')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🧇</div>
+        <h4>Maple Butter</h4>
+        <p>Classic waffle with maple syrup & butter</p>
+        <p class="price">₹129</p>
+        <button onclick="order('Maple Butter Waffle')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🥜</div>
+        <h4>Peanut Butter</h4>
+        <p>Crispy waffle with creamy peanut butter</p>
+        <p class="price">₹149</p>
+        <button onclick="order('Peanut Butter Waffle')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍓</div>
+        <h4>Strawberry Cream</h4>
+        <p>Waffle with strawberry sauce & whipped cream</p>
+        <p class="price">₹169</p>
+        <button onclick="order('Strawberry Cream Waffle')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CHOCOLATE WAFFLES -->
+  <div class="section" id="choco">
+    <h3>🍫 Chocolate Waffles</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍫</div>
+        <h4>Dark Chocolate Overload</h4>
+        <p>Belgian dark chocolate drizzled waffle</p>
+        <p class="price">₹189</p>
+        <button onclick="order('Dark Chocolate Overload Waffle')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍫</div>
+        <h4>KitKat Waffle</h4>
+        <p>Waffle topped with KitKat & chocolate sauce</p>
+        <p class="price">₹199</p>
+        <button onclick="order('KitKat Waffle')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍫</div>
+        <h4>Triple Chocolate</h4>
+        <p>White, milk & dark chocolate on one waffle</p>
+        <p class="price">₹219</p>
+        <button onclick="order('Triple Chocolate Waffle')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SPECIAL WAFFLES -->
+  <div class="section" id="special">
+    <h3>⭐ Special Waffles</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🍰</div>
+        <h4>Red Velvet Waffle</h4>
+        <p>Red velvet batter with cream cheese drizzle</p>
+        <p class="price">₹229</p>
+        <button onclick="order('Red Velvet Waffle')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍨</div>
+        <h4>Butterscotch Ice Cream Waffle</h4>
+        <p>Warm waffle with butterscotch ice cream scoop</p>
+        <p class="price">₹239</p>
+        <button onclick="order('Butterscotch Ice Cream Waffle')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🧇</div>
+        <h4>Death By Chocolate Cake</h4>
+        <p>Double layer waffle cake — pure indulgence</p>
+        <p class="price">₹299</p>
+        <button onclick="order('Death By Chocolate Waffle Cake')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- DRINKS -->
+  <div class="section" id="drinks">
+    <h3>🥤 Drinks</h3>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-img">🥛</div>
+        <h4>Oreo Milkshake</h4>
+        <p>Thick creamy Oreo blended shake</p>
+        <p class="price">₹149</p>
+        <button onclick="order('Oreo Milkshake')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">🍫</div>
+        <h4>Chocolate Milkshake</h4>
+        <p>Rich Belgian chocolate milkshake</p>
+        <p class="price">₹149</p>
+        <button onclick="order('Chocolate Milkshake')">Add to Cart</button>
+      </div>
+
+      <div class="card">
+        <div class="card-img">☕</div>
+        <h4>Cold Coffee</h4>
+        <p>Signature chilled creamy cold coffee</p>
+        <p class="price">₹129</p>
+        <button onclick="order('Cold Coffee')">Add to Cart</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="belgian_menu.js"></script>
+
+<script src="cart.js"></script>
+</body>
+</html>

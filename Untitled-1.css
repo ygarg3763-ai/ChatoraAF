@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+/* Background with Overlay */
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:
+linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+overflow:hidden;
+}
+
+/* Animated Gradient Glow Effect */
+
+body::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+background: radial-gradient(circle, rgba(255,140,0,0.4), transparent 70%);
+top:-100px;
+left:-100px;
+animation:moveGlow 8s infinite alternate ease-in-out;
+}
+
+@keyframes moveGlow{
+from{transform:translate(0,0);}
+to{transform:translate(200px,200px);}
+}
+
+/* Glass Container */
+
+.container{
+position:relative;
+z-index:1;
+width:380px;
+padding:50px 40px;
+border-radius:25px;
+background: rgba(255,255,255,0.08);
+backdrop-filter: blur(15px);
+box-shadow:0 0 40px rgba(0,0,0,0.6);
+text-align:center;
+animation:float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0);}
+}
+
+/* Stylish Animated Title */
+
+h1{
+font-size:40px;
+font-weight:800;
+background: linear-gradient(45deg, orange, red, yellow);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:30px;
+animation: glowText 2s infinite alternate;
+}
+
+@keyframes glowText{
+from{text-shadow:0 0 10px orange;}
+to{text-shadow:0 0 25px red;}
+}
+
+/* Inputs */
+
+input{
+width:100%;
+padding:14px;
+margin:15px 0;
+border:none;
+border-radius:12px;
+outline:none;
+background:rgba(255,255,255,0.2);
+color:white;
+font-size:15px;
+transition:0.3s;
+}
+
+input::placeholder{
+color:#ddd;
+}
+
+input:focus{
+transform:scale(1.05);
+box-shadow:0 0 15px orange;
+}
+
+/* Animated Gradient Button */
+
+button{
+width:100%;
+padding:14px;
+margin-top:20px;
+border:none;
+border-radius:12px;
+font-size:16px;
+font-weight:600;
+color:white;
+cursor:pointer;
+background: linear-gradient(45deg, orange, red);
+background-size:200% 200%;
+transition:0.4s;
+}
+
+button:hover{
+background-position:right center;
+transform:scale(1.08);
+box-shadow:0 0 20px red;
+}
+

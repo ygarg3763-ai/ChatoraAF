@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chatora AF - Parantha Corner</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="wlcmchotora.png">
+
+<link rel="stylesheet" href="parantha_menu.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-logo" style="display: flex; align-items: center;">
+    <img src="wlcmchotora.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+    CHATORAAF
+  </div>
+  <div class="nav-search">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search food, restaurants...">
+  </div>
+  <div class="nav-loc hm">
+    <i class="fas fa-map-marker-alt" style="color:var(--fire)"></i>
+    <select>
+      <option>Chitkara University, Patiala</option>
+      <option>Banur</option>
+      <option>Rajpura</option>
+      <option>Jhansla</option>
+    </select>
+  </div>
+  <div class="nav-links">
+    <a href="homepage.html" class="hm">Home</a>
+    <a href="restruant.html" class="hm">Restaurants</a>
+    <a href="tiffin.html" class="hm">Tiffin</a>
+    <a href="dietplan.html" class="hm">Diet Plans</a>
+    <a href="budget.html" class="hm">Budget</a>
+    <a href="grouporder.html" class="hm">Group Order</a>
+    <a href="profile.html" class="hm">Profile</a>
+    <a href="cart.html" class="cart">🛒 Cart</a>
+  </div>
+</nav>
+
+
+<header>
+  <h1>🍽️ Chatora AF</h1>
+  <p>Chitkara University, Patiala 📍</p>
+</header>
+
+<div class="back">
+  <a href="restruant.html">← Back to Restaurants</a>
+</div>
+
+<div class="hero">
+  <h2>🥙 Parantha Corner</h2>
+  <p>⭐ 4.4 &nbsp;|&nbsp; ⏱ 15–25 min &nbsp;|&nbsp; 🛵 Free Delivery</p>
+  <p style="margin-top:8px; font-size:12px;">Served with curd & pickle</p>
+</div>
+
+<div class="menu">
+  <h3>🥙 Our Paranthas</h3>
+  <div class="cards">
+
+    <div class="card">
+      <div class="card-img">🥙</div>
+      <h4>Aloo Paratha</h4>
+      <p>Classic spiced potato stuffing</p>
+      <p class="price">₹60</p>
+      <button onclick="order('Aloo Paratha')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🥙</div>
+      <h4>Paneer Paratha</h4>
+      <p>Fresh paneer with spices</p>
+      <p class="price">₹80</p>
+      <button onclick="order('Paneer Paratha')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🥙</div>
+      <h4>Gobi Paratha</h4>
+      <p>Spiced cauliflower stuffing</p>
+      <p class="price">₹60</p>
+      <button onclick="order('Gobi Paratha')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🥙</div>
+      <h4>Mooli Paratha</h4>
+      <p>Grated radish with green chilli</p>
+      <p class="price">₹55</p>
+      <button onclick="order('Mooli Paratha')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🥙</div>
+      <h4>Onion Paratha</h4>
+      <p>Crispy onion & coriander mix</p>
+      <p class="price">₹55</p>
+      <button onclick="order('Onion Paratha')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🥙</div>
+      <h4>Mix Veg Paratha</h4>
+      <p>Seasonal veggies all in one</p>
+      <p class="price">₹70</p>
+      <button onclick="order('Mix Veg Paratha')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🥙</div>
+      <h4>Plain Paratha</h4>
+      <p>Simple butter paratha, pure comfort</p>
+      <p class="price">₹40</p>
+      <button onclick="order('Plain Paratha')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🥙</div>
+      <h4>Methi Paratha</h4>
+      <p>Fresh fenugreek leaves & spices</p>
+      <p class="price">₹60</p>
+      <button onclick="order('Methi Paratha')">Add to Cart</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="parantha_menu.js"></script>
+
+<script src="cart.js"></script>
+</body>
+</html>

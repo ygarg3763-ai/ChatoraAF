@@ -1,5 +1,5 @@
 
-const GEMINI_API_KEY = "AIzaSyCrJKEXYSh9Uor7qOGQtgBV0vRK7pMoy0o"; 
+const GEMINI_API_KEY = process.env.API_KEY; 
 
 const MODEL = "gemini-flash-latest";
 
